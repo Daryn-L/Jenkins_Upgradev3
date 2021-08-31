@@ -15,6 +15,7 @@ public class TestGreeter {
 
   private Greeter greeter;
 
+
   @Before
   public void setup() {
     greeter = new Greeter();
@@ -40,4 +41,12 @@ public class TestGreeter {
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
+
+  @Test
+  public void darynsTest() {
+    String someone = "Test String";
+    console.log(someone)
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
+  }
+
 }
