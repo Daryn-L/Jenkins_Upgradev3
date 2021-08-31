@@ -45,7 +45,7 @@ public class TestGreeter {
   @Test
   public void darynsTest() {
     String someone = "Test String";
-    console.log(someone);
+    System.out.println(someone);
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 
